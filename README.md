@@ -2,3 +2,4 @@
 
 Amazon pay module for scandipwa theme.
 
+
