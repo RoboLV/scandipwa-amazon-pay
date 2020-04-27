@@ -16,7 +16,7 @@
   },
   "require": {
     "magento/magento2-base": "^2.3.3",
-    "scandipwa/installer": "^2.0"
+    "scandipwa/source": "^2.7.2"
   },
   "type": "magento2-module",
   "authors": [
