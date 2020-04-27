@@ -1,0 +1,39 @@
+{
+  "name": "robo/scandipwa-amazon-pay",
+  "description": "ScandiPWA Amazon module",
+  "keywords": [
+    "magento2",
+    "module",
+    "scandipwa",
+    "pwa",
+    "amazon",
+    "amazon-pay",
+    "pay",
+    "graphql"
+  ],
+  "support": {
+    "email": "torengo120@gmail.com"
+  },
+  "require": {
+    "magento/magento2-base": "^2.3.3",
+    "scandipwa/installer": "^2.0"
+  },
+  "type": "magento2-module",
+  "authors": [
+    {
+      "name": "Rihards Stasanss",
+      "email": "torengo120@gmail.com"
+    }
+  ],
+  "license": [
+    "OSL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "src/Robo/AmazonPay/registration.php"
+    ],
+    "psr-4": {
+      "Robo\\AmazonPay\\": "src/Robo/AmazonPay/"
+    }
+  }
+}

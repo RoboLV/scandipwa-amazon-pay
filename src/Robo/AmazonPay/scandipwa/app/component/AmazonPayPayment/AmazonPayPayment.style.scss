@@ -1,0 +1,50 @@
+/*!*
+ * @category  Robo
+ * @author    Rihards Stasans <torengo120@gmail.com>
+ * @license   http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
+ */
+
+.AmazonPayPayment {
+    &-Wrapper {
+        padding: 6px;
+
+        @include after-mobile {
+            padding: 12px;
+        }
+    }
+
+    &-ErrorMessage {
+        color: var(--primary-error-color);
+    }
+
+    &-PayButton {
+        text-align: center;
+
+        img {
+            display: none;
+            width: auto;
+
+            &:first-child {
+                display: initial;
+            }
+        }
+    }
+
+    &-Details {
+        display: grid;
+        grid-gap: 12px;
+        grid-template-rows: auto;
+
+        .amazonpay-button-inner-image {
+            display: none;
+        }
+    }
+
+    &-Address,
+    &-Wallet {
+        iframe {
+            position: relative !important;
+            min-height: 230px;
+        }
+    }
+}

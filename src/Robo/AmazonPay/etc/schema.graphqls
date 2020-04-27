@@ -1,0 +1,18 @@
+type StoreConfig {
+    amazonPay: AmazonPayType @resolver(class: "Robo\\AmazonPay\\Model\\Resolver\\GetConfigResolver") @doc(description: "Get config for Amazon Pay payment")
+}
+
+type AmazonPayType {
+    widget_url: String
+    client_id: String
+    merchant_id: String
+}
+
+input PaymentMethodInput {
+    amazon_payment: AmazonPayInput @doc(description: "Defines the required attributes for Amazon Pay payments")
+}
+
+input AmazonPayInput {
+    token: String! @doc(description: "Amazon Pay authorization tocken")
+    amazon_order_reference_id: String! @doc(description: "Amazon Pay order id")
+}

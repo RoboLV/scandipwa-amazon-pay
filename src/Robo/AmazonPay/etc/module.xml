@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--~
+  ~ @category  Robo
+  ~ @author    Rihards Stasans <torengo120@gmail.com>
+  ~ @license   http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Robo_AmazonPay" setup_version="0.1.0">
+        <sequence>
+            <module name="Amazon_Payment"/>
+            <module name="Magento_QuoteGraphQl"/>
+        </sequence>
+    </module>
+</config>
